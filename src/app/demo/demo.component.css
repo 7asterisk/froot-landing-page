@@ -1,0 +1,102 @@
+input[type=text] ,input[type=email],textarea {
+    border: none;
+    border-bottom: 2px solid #7A7A7A ;
+    background-color: #404040;
+    color: white;
+    box-shadow: none;
+   letter-spacing: 3px;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #7A7A7A;
+    opacity: 1; /* Firefox */
+    font-size: 1.2rem;
+    font-family: metropolis;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #7A7A7A;
+  }
+  
+  
+
+  .notification {
+    border-radius: 2px;
+    padding: 1rem;
+    font-family: metropolis;
+    letter-spacing: 1.5px;
+   }
+
+  .address-box{
+    margin-top:20%; 
+    margin-left: 10%;
+    color: #e7e6e6  ; 
+    font-style: inherit;
+    letter-spacing: 2px;
+  }
+.address-box >p {
+  margin-top: 5%;
+}
+  .label {
+    color: #e7e6e6;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: metropolis ;
+}
+  .field{
+    margin: 0.9rem;
+  }
+
+.top-content-dark > p{
+margin-bottom: 10px;
+}
+.top-content-dark {
+  margin-top: -2%;
+  }
+  .contect-box{
+    background-color: #2f2f2f;
+    width: 20%; min-height: 100%;
+    position: absolute; top: 0; right:0;
+    margin-right: 10%;
+  }
+
+  .form-content{
+    margin-left: 20%;
+  }
+
+  a {
+    cursor: url(../../assets/acurser.png) auto;
+    margin: 0;
+    padding: 0.5rem  1.2rem;
+    font-size: 1.2rem;
+    background: #fecf20;
+    border: none;
+    color: #2f2f2f;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-top: 5rem;;
+  /* border: aliceblue solid 2px; */
+}
+
+.myfooter{
+  margin-top:10%;
+  color: blanchedalmond;
+  background-color: #404040;
+  padding-left: 9%
+}
+
+a:hover {
+  background-color: #404040;
+  color: #fecf20;
+  border: #fecf20 solid 2px;
+}
+  
+@media screen and (max-width: 600px) {
+  .form-content{
+    margin-left: 0%;
+    margin-right: 12%
+  }
+    
+
+}

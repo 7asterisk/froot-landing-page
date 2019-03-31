@@ -1,0 +1,11 @@
+<a class="r-button is-hidden-mobile " (click)="changeNavTODark()" routerLink="/Discover" routerLinkActive="hide">  DISCOVER </a>
+
+<a class="r-button is-small is-hidden-tablet button" (click)="changeNavTODark()" routerLink="/Discover" routerLinkActive="hide">  DISCOVER </a>
+
+<main [@routeAnimations]="prepareRoute(o)">
+    <router-outlet #o="outlet"></router-outlet>
+</main>
+
+<!-- <app-navbar class="{{display}}"></app-navbar> -->
+
+

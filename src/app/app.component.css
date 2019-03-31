@@ -1,0 +1,66 @@
+
+
+    .hide{
+    display: none;
+    }
+
+    main {
+    height: 100%;
+    margin-right: 10%;
+    /* position: relative; */
+  }
+
+  @media screen and (max-width: 600px) {
+    
+  main {
+    height: 100%;
+    margin-right: 20%;
+  }
+    
+  }
+
+
+
+
+
+
+  
+
+  
+
+
+  .menu-dark{
+    /* width: 80px; */
+    margin-top: 1rem;
+    margin-bottom: 6.5rem;
+    text-decoration: none;
+    font-size: 9.4608px;
+    color: #fff;
+    display:block;
+    letter-spacing: 3.5px;
+    text-align: center;
+    font-weight: 400;
+    font-family:  metropolis;
+  }
+
+.rotate:hover{
+  font-weight: 500;
+}
+  .nav-menu{
+     padding-top: 8rem;
+     cursor: ("../../assets/cursser.png"), auto;;
+  }
+
+ 
+    
+@media screen and (max-width: 600px) {
+  .menu-light{
+    margin-bottom: 6rem;
+    }
+    .menu-dark{
+      margin-bottom: 6rem;
+      }
+      .nav-menu{
+        padding-top: 4rem;
+     }
+  }

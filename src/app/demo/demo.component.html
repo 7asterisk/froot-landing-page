@@ -1,0 +1,101 @@
+<div class="black-bg">
+  <div class="columns" style="margin-left: 1%; margin-top:1%;">
+    <div class="column is-2">
+      <app-side-logo-dark></app-side-logo-dark>
+      <p class=" has-text-centered title-box-text-dark">
+        DISCOVER
+      </p>
+    </div>
+    <div @inEffect class="column top-content-dark is-6">
+      <p>
+        How many companies can claim that every single customer who experienced their products loved those products
+        too? </p>
+        <p> Well, we can. Don’t believe it? </p>
+        <p>
+        Schedule a demo with us and experience true intelligence.
+      </p>
+    </div>
+  </div>
+
+  <div *ngIf=" sendSuccess" class="column is-offset-2 is-5 is-hidden-mobile" style="padding-left:4rem" >
+    <div class="notification">
+      <button class="delete" (click)="sendSuccess=false" ></button>
+     Message sent successfully, Thank you for your message
+    </div>
+  </div>
+
+
+  <div *ngIf="sendSuccess" class="column is-hidden-tablet" style="margin-right: 4rem;">
+    <div class="notification">
+      <button class="delete" (click)="sendSuccess=false"></button>
+     Message sent successfully, Thank you for your message 
+    </div>
+  </div>
+
+  <form class="form-content" @inEffect>
+    <div class=" columns">
+      <div class="column is-6 ">
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <p class="control ">
+                <input #name class="input " type="text" style=" border-radius:0px;"  placeholder="Name" required>
+              </p>
+            </div>
+
+            <div class="field">
+              <p class="control ">
+                <input #email class="input " placeholder="E-Mail" type="email" style=" border-radius:0px; "  required>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <textarea placeholder="Message" #msg class="textarea" style=" border-radius:0px; " required></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field is-grouped is-grouped-centered">
+              <div class="control ">
+                <a (click)="schedule(msg.value,name.value,email.value)">
+                  SCHEDULE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+
+  <div class="contect-box is-hidden-mobile">
+    <div class="address-box" style="margin-top:70%; margin-left: 10%;color: #e7e6e6 ;">
+      <p> Follow us: </p>
+      <p><i class="fab  fa-twitter"></i> @FrootResearch</p>
+      <p><i class="fab  fa-linkedin-in"></i> @research_28826</p>
+    </div>
+    <div class="address-box">
+      <p>Contact us:</p>
+      <p> <i class="fas  fa-envelope"></i> contact@froot.co.in</p>
+      <p> <i class="fas  fa-phone"></i> +91.820.841.5356 </p>
+      <p><i class="fas fa-map-marker-alt"></i> Pune, MH</p>
+      <p style="margin-left:1rem">India 411041 </p>
+    </div>
+  </div>
+
+  <div class="column is-hidden-tablet myfooter  address-box">
+    <p> <i class="fas  fa-envelope"></i> contact@froot.co.in</p>
+    <p> <i class="fas  fa-phone"></i> +91.820.841.5356 </p>
+  </div>
+
+</div>
+
+<app-navbar-dark></app-navbar-dark>

@@ -1,0 +1,275 @@
+/* font style */
+
+@font-face {
+    font-family: "metropolis";
+    src: url("./assets/fonts/Metropolis-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "metropolis";
+    src: url("./assets/fonts/Metropolis-Bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "metropolis";
+    src: url("./assets/fonts/Metropolis-BoldItalic.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "metropolis";
+    src: url("./assets/fonts/Metropolis-RegularItalic.woff") format('woff');
+    font-style: italic;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+html{
+    background-color: #fff;
+    cursor: url("./assets/curser.svg") 10 10,auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-content{
+    padding-left: 25%;
+    margin-top: 5%
+}
+.top-content{
+    padding-top: 4%;
+    color: rgb(47, 47, 47);;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.top-content > p{
+    font-family: 'Nova Mono', monospace;
+    /* text-align: justify; */
+}
+
+
+.top-content-dark{
+    padding-top: 6%;
+    color: #e7e6e6;
+    font-weight: 400;
+    font-size: 27px;
+    
+}
+
+.top-content-dark > p{
+    font-family: 'Nova Mono', monospace;
+    /* font-size: 1.5rem; */
+    /* text-align: justify; */
+}
+.title{
+    color: rgb(47, 47, 47);;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 25.9px;
+}
+.heading{
+    font-family: metropolis;
+    font-size: 14.6667px;
+    font-weight: 400;
+    line-height: 23.4667px;
+    color: rgb(47, 47, 47);
+}
+p{
+    font-family: metropolis;
+}
+.main-content-dark{
+    padding-left: 10%;
+}
+.rotate {
+    -moz-transform: rotate(90.0deg);  /* FF3.5+ */
+      -o-transform: rotate(90.0deg);  /* Opera 10.5 */
+ -webkit-transform: rotate(90.0deg);  /* Saf3.1+, Chrome */
+            filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+}
+
+.title-box{
+    padding: 6%;
+}
+.title-box-text{
+    font-family: metropolis;
+    width: 70%;
+    padding: 4px;
+    background:#090909; 
+    color:white;
+    letter-spacing: 4px;
+     border-radius:0px;
+     font-size: 13px;
+     font-weight: 700;
+}
+.title-box-text-dark{
+    font-family: metropolis;
+    letter-spacing: 4px;
+    width: 70%;
+    padding: 4px;
+    background: #e7e6e6; 
+    color:#090909;
+     border-radius:0px;
+     
+    letter-spacing: 4px;
+    border-radius:0px;
+    font-size: 13px;
+    font-weight: 700;
+}
+a{
+    cursor: url("./assets/acurser.png") 10 10 ,auto;
+}
+
+
+
+
+.orange-text{
+    color: #fecf20;
+   
+}
+
+
+.black-bg{
+    background-color: #404040;
+    width: 100%; min-height: 103%;
+    position: absolute; top: 0; left: 0;
+    cursor: url(./assets/acurser.png) auto;
+}
+.divider{
+    border-top: 4px solid rgb(47, 47, 47);
+    width: 90%;
+    /* margin-left: 20%; */
+    margin-bottom: 10px;  
+}
+
+app-navbar-light{
+    height: 100%;
+    width: 4%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 8%;
+    }
+   
+
+    app-navbar-dark{
+        height: 100%;
+        width: 4%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #404040;
+        overflow-x: hidden;
+        padding-top: 8%;
+        }
+
+        .active{
+            border-bottom: 1.3px solid #fecf20;
+            }
+        
+.r-button{
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    right: 12%;
+    overflow-x: hidden;
+    background-color: #090909;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: metropolis;
+    letter-spacing: 4px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.r-button:hover{
+    background-color: #fff;
+    color: #090909;
+    border-style: solid;
+}
+.r-button-dark{
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    right: 25%;
+    overflow-x: hidden;
+    background-color: #fff;
+    border-radius: 0px;
+    color: #090909;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .top-content{
+        padding-top: 7%;
+        padding-left: 13%;
+        color: rgb(47, 47, 47);;
+        font-weight: 600;
+        font-size: 1.2rem;
+        font-family: 'Nova Mono', monospace;
+       
+    }
+    .top-content-dark{
+        padding-top: 7%;
+        padding-left: 5%;
+        padding-right: 20%;
+        color: #e7e6e6;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: 'Nova Mono', monospace;
+        
+    }
+    
+    .title-box-text-dark{
+        margin-top: 2%;
+        width: 50%;
+    }
+    .title-box{
+        padding-left:12%;
+    }
+    
+.logo-box >img {
+    max-width: 15vw;
+  }
+
+  .title-box-text{
+    margin-top: 5%;
+}
+
+.r-button{
+    top: 6%;
+    right: 17%;
+    border: none;
+}
+app-navbar-light{
+    width: 18%;
+    padding-top:14%;
+    }
+    app-navbar-dark{
+        width: 18%;
+        padding-top: 14%;
+        }
+.main-content{
+    padding-left: 15%;
+}
+
+.main-content-dark{
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+.black-bg{
+    min-height: 130%;
+}
+
+    }

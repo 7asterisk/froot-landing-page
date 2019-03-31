@@ -1,0 +1,36 @@
+p{
+    font-family: metropolis;
+    letter-spacing: 8px;
+    /* font-weight: 300;    */
+    /* margin-bottom: -5px; */
+    line-height: 13px;
+}
+
+
+.sub-logo-title{
+    font-family: metropolis;
+    letter-spacing: 1px;
+    line-height: 16px;
+    font-size: 0.9rem;  
+}
+
+.logo-box{
+    margin-left: 1rem
+}
+.logo-box> a > img {
+    max-width: 4vw;
+    margin-left: -10px;
+      /* margin: 30px 40px; */
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .logo-box>a >img {
+     max-width: 10vw;
+    }
+
+    .title-box-text{
+    margin-top: 5%;
+    }
+    
+}

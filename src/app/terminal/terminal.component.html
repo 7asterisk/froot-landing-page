@@ -1,0 +1,8 @@
+
+<div class="fakey"><span style="color:#c9c7c9">[root]</span>~
+  <input placeholder="Type command /help" (keyup.enter)="onEnter(cmd.value)" #cmd autofocus>
+</div>
+
+<div *ngFor="let output of output" class="output">
+  <span *ngIf="output" style="margin-left:-10px; font-weight:800; font-size:1.2rem ">|</span>{{output}}
+</div>
