@@ -21,6 +21,7 @@ import { environment } from '../environments/environment';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { NavbarLightComponent } from './navbar-light/navbar-light.component';
 import { NavbarDarkComponent } from './navbar-dark/navbar-dark.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent, data: {animation: 'Home'} },
@@ -53,10 +54,11 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
      ),
-     AngularFireModule.initializeApp(environment.firebase)
+    //  AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [ AngularFirestore],
   bootstrap: [AppComponent]
