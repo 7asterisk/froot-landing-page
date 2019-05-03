@@ -38,7 +38,7 @@ export class DemoComponent implements OnInit {
       const body = {
         msg: msg, name: name, email: email
       };
-      const url = `https://us-central1-frootdashboard.cloudfunctions.net/sendMail`;
+      const url = `https://us-central1-froot-co-in.cloudfunctions.net/sendMail`;
       const headers = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' }) };
 
       return this.http.post(url, body, headers)
